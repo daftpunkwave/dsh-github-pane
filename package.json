@@ -1,0 +1,59 @@
+{
+  "name": "dsh-github-pane",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "GitHub review pane for DeepSeek Harness: read and review pull requests, issues, and discussions of the current session repository in the right sidebar.",
+  "license": "MIT",
+  "author": "Lucien",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "github",
+    "pull-request",
+    "code-review",
+    "issues",
+    "discussions"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daftpunkwave/dsh-github-pane.git"
+  },
+  "homepage": "https://github.com/daftpunkwave/dsh-github-pane#readme",
+  "bugs": {
+    "url": "https://github.com/daftpunkwave/dsh-github-pane/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "host",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "scripts",
+    "icon.svg",
+    "README.md"
+  ],
+  "scripts": {
+    "check": "node scripts/check.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar-right",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}

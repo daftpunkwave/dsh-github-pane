@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "GitHub pane",
+    "description": "Read and review pull requests, issues, and discussions of the current session repository in the right sidebar, with GitHub-grade Markdown, diffs, inline review threads, and review submission."
+  }
+}

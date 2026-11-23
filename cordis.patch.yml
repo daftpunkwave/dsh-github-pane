@@ -1,0 +1,4 @@
+# dsh bundle patch: inserts this plugin's rows into the profile's layer stack.
+- insert:
+    - id: github-panel
+      name: 'dsh-github-pane'

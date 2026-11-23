@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "GitHub 工作台",
+    "description": "在右侧栏阅读并审阅当前会话仓库的 Pull Request、Issue 与 Discussion，支持 GitHub 级 Markdown、diff、行内评审线程与提交审阅。"
+  }
+}
